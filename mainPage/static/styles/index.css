@@ -1,0 +1,81 @@
+
+*{
+    margin: 0 0;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
+
+}
+
+body{
+    
+    background-image: linear-gradient(to top, black 0%, black 20%, transparent 100%), url(../images/photo_2023-05-30_23-50-27.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 150vh;
+    font-family: 'Roboto';
+}
+
+:root{
+    --hex_ref_width_out: 40vh;
+
+}
+
+
+
+
+
+footer{
+    
+    position: absolute;
+    left:0;
+    bottom: 0;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 100px;
+
+}
+
+
+.content{
+    
+    
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+
+@media screen and (max-width: 1201px) {
+    footer{
+    
+        position: absolute;
+        left:0;
+        bottom: 0;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        background: black;
+        height: 100px;
+    
+    }
+}

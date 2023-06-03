@@ -1,0 +1,13 @@
+ margin-top: calc(-1* var(--hex_ref_width_out)/5);
+    margin-bottom: calc(-1* var(--hex_ref_width_out)/5);
+    margin-left:  calc(var(--hex_ref_width_out) * 0.25);
+    margin-right:  calc(var(--hex_ref_width_out) * 0.25);
+
+
+
+
+margin-top: calc(-1* var(--hex_ref_width_out)/5);
+    margin-bottom: calc(-1* var(--hex_ref_width_out)/5);
+    margin-left:  300px;
+    margin-right:  300px;
+    

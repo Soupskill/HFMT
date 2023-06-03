@@ -1,0 +1,9 @@
+.contacts-content{
+    display: flex;
+    margin: 0 auto;
+    top: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
