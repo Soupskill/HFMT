@@ -1,9 +1,38 @@
 .contacts-content{
-    display: flex;
+    display: block;
     margin: 0 auto;
     top: 15%;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
 
+}
+
+.how-to-contact{
+    animation: up-shifting 1s forwards;
+}
+
+@keyframes up-shifting {
+    0% {transform: translateY(100px);}
+    100% {transform: translateY(0px);}
+}
+
+.adresses{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.adress{
+    display: block;
+    margin: 10px 60px;
+    justify-content: center;
+    align-items: center;
+    color: #fbd160;
 }

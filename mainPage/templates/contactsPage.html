@@ -1,11 +1,43 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+{% load static %}
 <div class="contacts-content">
-    <H2 style="color:antiquewhite; text-transform: uppercase;">
+    <H2 class="how-to-contact" style="color:antiquewhite; text-transform: uppercase; font-size: 50px;">
         Как с нами связаться
     </H2>
+    <div class="adresses">
+        
+            <div class="adress">
+                <a href="tel:79005710477" alt="Call +79005710477">
+                    <img src="{% static 'images/phone_call.png'%}" style="filter: invert(1);width: 80px; height: 80px;">
+                </a>
+                <p>Регистратура</p>
+                <p>79005710477</p>
+            </div>
+            
+        
+        <div class="adress">
+            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=139553179030">
+                <img src="{% static 'images/pin_map.png'%}" style="width: 80px; height: 80px;">
+            </a>
+            <p>ШЫМКЕНТ</p>
+            <p>1-ый переулок Байтурсынова</p>
+            <p>7/7 (Утеген Батыра 27)</p> 
+        </div>
+        <div class="adress">
+            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=74541258455">
+                <img src="{% static 'images/pin_map.png'%}" style="width: 80px; height: 80px;">
+            </a>
+            <p>АЛМАТЫ</p>
+            <p>ул. Ауэзова</p>
+            <p>145В, 211каб.</p>
+        </div>
+    </div>
+    <div class="map-yandex" style="width: 100%;">
+        <iframe src="https://api-maps.yandex.ru/frame/v1//?z=12&ol=biz&oid=139553179030" frameborder="0" width="100%" height="400px"></iframe>
+    </div>
+
 </div>
 
 {% endblock %}

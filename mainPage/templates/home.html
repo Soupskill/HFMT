@@ -2,6 +2,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 
     <div class="slogan">
         <h1>BFMT COMPANY</h1>
@@ -13,6 +14,7 @@
         <div class="hex-ref" id="shop-medfitomir">
             <a href="https://shop.medfitomir.kz/">
             <div class="hex-ref-content" id="shop-medfitomir">
+                <img src="{% static 'images/equipment.png' %}" style="width: calc(var(--hex_ref_width_out)*0.6); height: calc(var(--hex_ref_width_out)*0.6);">
             </div>
             </a>
         </div>
@@ -20,7 +22,7 @@
         <div class="hex-ref" id="protez">
             <a href="#">
                 <div class="hex-ref-content" id="protez">
-                    asdsd
+                    <img src="{% static 'images/hand.png' %}" style="filter: invert(1);width: calc(var(--hex_ref_width_out)*0.6); height: calc(var(--hex_ref_width_out)*0.6);">
                 </div>
             </a>
             
@@ -28,7 +30,7 @@
         <div class="hex-ref-center">
             <a href="#">
                 <div class="hex-ref-content">
-                    asdsd
+                    <img src="{% static 'images/cross.png' %}" style="filter: invert(1); width: calc(var(--hex_ref_width_out)*0.6); height: calc(var(--hex_ref_width_out)*0.6);">
                 </div>
             </a>
             
@@ -36,7 +38,7 @@
         <div class="hex-ref" id="exo-systems" >
             <a href="#">
                 <div class="hex-ref-content" id="exo-systems" >
-                    asdsd
+                    <img src="{% static 'images/skelete.png' %}" style="filter: invert(1); width: calc(var(--hex_ref_width_out)*0.6); height: calc(var(--hex_ref_width_out)*0.6);">
                 </div>
             </a>
             
@@ -44,7 +46,7 @@
         <div class="hex-ref" id="drags">
             <a href="#">
                 <div class="hex-ref-content" id="drags">
-                    asdsd
+                    <img src="{% static 'images/stupka.png' %}" style="width: calc(var(--hex_ref_width_out)*0.6); height: calc(var(--hex_ref_width_out)*0.6);">
                     
                 </div>
             </a>

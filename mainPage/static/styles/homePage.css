@@ -9,10 +9,10 @@
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 6vh;
+    font-size: 4vh;
     font-family: 'Roboto';
     font-weight: 200;
-    background: -webkit-linear-gradient(left, rgb(201, 114, 0) 20%,   rgb(255, 230, 86) 80%);
+    background: -webkit-linear-gradient(left, rgb(201, 114, 0) 20%,   #fbd160 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: down-shifting 1.3s forwards;
@@ -73,7 +73,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: rgb(181, 146, 6);
+    background-color: #fbd160;
 }
 
 .hex-ref-center{
@@ -96,7 +96,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: rgb(181, 146, 6);
+    background-color: #fbd160;
     
 }
 
@@ -146,30 +146,33 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: rgb(26, 21, 0);
+    background-color: rgb(14, 13, 11);
 }
 
 
 
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1000px) {
+    .content{
+        display: block;
+    }
     .placeholder{
         display: block;
     }
     .hex-ref-center{
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .hex-ref#shop-medfitomir{
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .hex-ref#protez{
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .hex-ref#exo-systems{
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .hex-ref#drags{
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     
 

@@ -41,13 +41,13 @@ header{
     display: inline;
     font-family: Helvetica;
     font-weight: lighter;
-    font-size: 200% ;
+    font-size: 3vh ;
     min-width: 250px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: bisque;
+    color: #fbd160;
 
 }
 
@@ -73,12 +73,12 @@ header{
         0% 25%
     );
     transition: 0.2s;
-    background-color:rgba(221, 204, 50, 0.315);
+    background-color:rgba(150, 150, 150, 0.233);
 }
 
 .hex-contact:hover{
     transform: scale(1.1);
-    background-color: rgba(224, 221, 46, 0.76);
+    background-color: #fbd160;
 
     
 }
@@ -87,7 +87,6 @@ header{
 
 
 .sns-icons{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
 }
