@@ -21,7 +21,7 @@
 
 body{
     
-    background-image: linear-gradient(to top, black 60%, transparent 100%), url(../images/5293464.jpg);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 50%,  rgba(82, 82, 82, 0.781) 100%), url(../images/5293464.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -35,8 +35,8 @@ body{
 }
 
 :root{
-    --hex_ref_width_out: 200px;
-    --min_width_to_mobile: 800px;
+    --hex_ref_width_out: 300px;
+    --min_width_to_mobile: 800px;   
 
 }
 
@@ -50,8 +50,7 @@ body{
     
     
     position: absolute;
-    padding: 10% 0;
-    top:20%;
+    padding: 7rem 0;
     width: 100%;
     display: block;
     flex-wrap: wrap;

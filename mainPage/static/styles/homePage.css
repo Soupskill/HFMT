@@ -24,7 +24,8 @@
 
 .placeholder{
     
-    margin-bottom: 100px;
+
+    padding: 100px 0;
     height: auto;
     position: relative;
     justify-content: center;
@@ -33,7 +34,7 @@
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    overflow: hidden;
     
 }
 
@@ -72,7 +73,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color:#ffffff3d;
+    background-color:#FFE1A2;
 }
 
 .hex-ref-center{
@@ -94,7 +95,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color:#ffffff3d;
+    background-color:#FFE1A2;
     
 }
 
@@ -113,27 +114,57 @@
     margin-bottom: calc( -1* var(--hex_ref_width_out) * 0.4);
 }
 
+a{
+    font-size: 3rem;
+    text-decoration: none;
+
+}
+
+
 
 .hex-ref-center:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
+    z-index: 200;
 }
 
 .hex-ref:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
+    z-index: 200;
 }
 
+.hex-ref:hover .hex-ref-content{
+
+    display: flex;
+}
+
+
+.hex-ref-center:hover .hex-ref-content{
+
+    display: flex;
+}
+
+
 .hex-ref-content{
-    margin: 10px 10px;
-    --widthin: calc(var(--hex_ref_width_out) - 20px);
     
+    --widthin: calc(var(--hex_ref_width_out) - 10px);
     width: var(--widthin);
     height: calc(var(--widthin)/1.17);
-    display: flex;
+    display: none;
     flex-wrap: unset;
-    justify-content: center;
+    vertical-align: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     position: relative;
+    word-wrap: break-word;
+    shape-outside: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
     clip-path: polygon(
         25% 0%,
         75% 0%,
@@ -143,11 +174,65 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: #000	;
+    background-color: rgba(255, 255, 255, 0.781)	;
 }
 
 
 
+
+.hex-descr{
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    line-height: 2rem;
+
+
+}
+
+.hex-ref#shop-medfitomir{
+    background-image: url('../images/equipment.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.hex-ref#protez{
+    background-image: url('../images/hand.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.hex-ref-center#hex-cross{
+    background-image: url('../images/cross.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+   
+
+
+
+.hex-ref#exo-systems{
+    background-image: url('../images/skelete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hex-ref#drags{
+    background-image: url('../images/stupka.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
 @media screen and (max-width: 840px) {
     
@@ -155,22 +240,35 @@
         display: block;
     }
     .placeholder{
-        display: block;
-    }
-    .hex-ref-center{
-        margin: 20px auto;
+        display: flex;
+        
     }
     .hex-ref#shop-medfitomir{
-        margin: 20px auto;
+        position: relative;
+        margin: 20px 20px;
+
     }
+
     .hex-ref#protez{
-        margin: 20px auto;
+        position: relative;
+        margin: 20px 20px;
+
     }
+    .hex-ref-center{
+        position: relative;
+        margin: 20px 20px;
+
+    }
+    
     .hex-ref#exo-systems{
-        margin: 20px auto;
+        position: relative;
+        margin: 20px 20px;
+
     }
     .hex-ref#drags{
-        margin: 20px auto;
+        position: relative;
+        margin: 20px 20px;
+
     }
     
 
