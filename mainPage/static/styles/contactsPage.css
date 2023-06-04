@@ -115,12 +115,13 @@ button#submit-reply{
     height: 50px;
     border-radius: 10px;
     font-size: 20px;
+    margin: 10px 0;
 }
 
 button#submit-reply:hover{
     background-color: #0957bd;
 }
-label + input {
+label + input{
     height: 30px;
     
 }
@@ -136,9 +137,9 @@ input + label{
 
 
 #form-question{
-    margin: 20px 20px;
+    
+    height: 200px;
     width: 400px;
-    height: 300px;
     border-radius: 5px;
     
 }
@@ -149,6 +150,11 @@ input + label{
         display: inline-table;
         margin: 150px auto;
         padding: 0 0;
+        width: 8rem;
     }
+    #form-question{
+        width: 12rem;
+    }
+    
 
 }

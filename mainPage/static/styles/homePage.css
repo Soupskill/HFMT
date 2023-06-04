@@ -9,7 +9,7 @@
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 2rem;
     font-family: 'Roboto';
     font-weight: 200;
     background: -webkit-linear-gradient(right, #FFE1A2 20%,  #FFBC2E 80%);
@@ -23,7 +23,7 @@
 
 
 .placeholder{
-    margin-top: 10vh;
+    
     margin-bottom: 100px;
     height: auto;
     position: relative;
@@ -156,7 +156,6 @@
     }
     .placeholder{
         display: block;
-        margin-top: 500px;
     }
     .hex-ref-center{
         margin: 20px auto;
