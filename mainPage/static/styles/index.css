@@ -26,12 +26,15 @@ body{
     background-position: center;
     background-attachment: fixed;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    height: 150vh;
     font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 :root{
     --hex_ref_width_out: 30vh;
+    --min_width_to_mobile: 800px;
 
 }
 
@@ -39,33 +42,26 @@ body{
 
 
 
-footer{
-    
-    position: absolute;
-    left:0;
-    bottom: 0;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    height: 100px;
-
-}
 
 
 .content{
     
     
     position: relative;
-    top: 15%;
-    display: flex;
+    padding: 30% 0;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 2vh;
+    height: auto;
+    flex-grow: 1;
 }
 
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 840px) {
+    .content{
+        padding: 60% 0;
+    }
     footer{
     
         position: absolute;

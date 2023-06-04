@@ -2,63 +2,75 @@
 {% block header %}
 {% load static %}
 <header>
-    
-    <a 
-    href="/"
-    hx-get="/"
-    hx-target="#main-content"
-    hx-swap="outerHTML"
-    hx-push-url="true"> 
-        <div class="brand">
-            <img style="width:13vh; height:10vh;" src="{% static 'images/hfmt.jpeg' %}">
-        </div>
-     
-    </a>
-
-   
-        <div class="top-menu">
-
-            <a class="top-ref" href="/about/"
-                                hx-get="/about/"
-                                hx-target="#main-content"
-                                hx-swap="outerHTML"
-                                hx-push-url="true"> О нас</a>
-        </div>
-
-    <div class="top-menu">
-        <a class="top-ref" href="/contacts/"
-                                hx-get="/contacts/"
-                                hx-target="#main-content"
-                                hx-swap="outerHTML"
-                                hx-push-url="true"> контакты </a>
-    </div>
-    <div class="top-menu">
-        <a class="top-ref" href="#contacts"> обратная связь </a>
-    </div>
-    <div class="top-menu">
+    <script>
         
-        <div class="hex-contact">
-            <a href="https://www.instagram.com/bfmt.company/" target="_blank">
-                <img class="sns-icons" src="{% static 'images/inst.png' %}">
-            </a>
-        </div>
-        <div class="hex-contact">
-            <a href="#">
-                <img class="sns-icons" src="{% static 'images/inst2.png' %}">
-            </a>
+        addEventListener('click', function(event){
+            const checkbox =  document.getElementById('burger-menu');
+            const cross_mark =  document.getElementById('cross-mark');
+
+            if (event.target !== checkbox){
+                checkbox.checked = false;
+            }
             
-        </div>
-        <div class="hex-contact">
-            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
-                <img class="sns-icons" src="{% static 'images/iyoutube.png' %}">
+
+            if (checkbox.checked){
+                cross_mark.style.display = 'block';
+            }else
+            {
+                cross_mark.style.display = 'none';
+            }
+        });
+
+        
+
+        
+        
+    </script>
+    <a 
+        href="/"
+        hx-get="/"
+        hx-target="#main-content"
+        hx-swap="outerHTML"
+        hx-push-url="true"> 
+            <div class="brand">
+                <img style="width:80px; height:60px;" src="{% static 'images/hfmt.jpeg' %}">
+                
+            </div>
+            
+        </a>
+    <p id="cross-mark">🗙</p>
+    <input type="checkbox" id="burger-menu">
+    <label for="burger-menu">☰</label>
+    <menu id="menu-burger">
+        <ul>
+
+        <li>
+            <a class="top-ref" href="/about/"
+                                    hx-get="/about/"
+                                    hx-target="#main-content"
+                                    hx-swap="outerHTML"
+                                    hx-push-url="true"> 
+            <div class="top-menu">
+
+                О нас
+            </div>
             </a>
-        </div>
-        <div class="hex-contact">
-            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
-                <img class="sns-icons" src="{% static 'images/iwhats.png' %}">
+        </li>
+
+        <li>
+            <a class="top-ref" href="/contacts/"
+                                        hx-get="/contacts/"
+                                        hx-target="#main-content"
+                                        hx-swap="outerHTML"
+                                        hx-push-url="true">
+            <div class="top-menu">
+                 контакты 
+            </div>
             </a>
-        </div>
-    </div>
+        </li>
+        </ul>
+    </menu>
     
+
 </header>
 {% endblock %}

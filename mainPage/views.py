@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.views.generic import TemplateView
-
+from .models import QuestionModel
 
 
 # Create your views here.
@@ -68,3 +68,8 @@ def getContactsPage(request):
         'footer_template': footer_template,
         'head_template': head_template}
         )
+
+def addQuestion(request):
+    
+    if request.method == 'POST':
+        pass

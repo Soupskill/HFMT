@@ -12,10 +12,10 @@
     font-size: 4vh;
     font-family: 'Roboto';
     font-weight: 200;
-    background: -webkit-linear-gradient(left, rgb(201, 114, 0) 20%,   #fbd160 80%);
+    background: -webkit-linear-gradient(right, #FFE1A2 20%,  #FFBC2E 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: down-shifting 1.3s forwards;
+    animation: down-shifting 0.8s forwards;
 
 }   
 
@@ -23,7 +23,7 @@
 
 
 .placeholder{
-    margin-top: 100px;
+    margin-top: 500px;
     margin-bottom: 100px;
     height: auto;
     position: relative;
@@ -33,12 +33,12 @@
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    animation: up-shifting 1s forwards;
+    
     
 }
 
 @keyframes down-shifting {
-    0% {transform: translateY(-50px);
+    0% {transform: translateY(-150px);
         opacity: 0%;}
     
     100% {transform: translateY(0px);
@@ -47,7 +47,7 @@
 
 
 @keyframes up-shifting {
-    0% {transform: translateY(200px);}
+    0% {transform: translateY(1000px);}
     100% {transform: translateY(0px);}
 }
 
@@ -73,7 +73,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: #fbd160;
+    background-color:#FFBC2E;
 }
 
 .hex-ref-center{
@@ -96,7 +96,7 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: #fbd160;
+    background-color: #FFBC2E;
     
 }
 
@@ -130,7 +130,7 @@
     
     width: var(--widthin);
     height: calc(var(--widthin)/1.17);
-    background-color: black;
+    background-color: #000	;
     display: flex;
     flex-wrap: unset;
     justify-content: center;
@@ -146,33 +146,34 @@
         0% 50%
     );
     transition: 0.2s;
-    background-color: rgb(14, 13, 11);
+    background-color: #000	;
 }
 
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 840px) {
     .content{
         display: block;
     }
     .placeholder{
         display: block;
+        margin-top: 500px;
     }
     .hex-ref-center{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .hex-ref#shop-medfitomir{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .hex-ref#protez{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .hex-ref#exo-systems{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .hex-ref#drags{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     
 

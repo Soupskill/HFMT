@@ -3,9 +3,32 @@
 {% block content %}
 {% load static %}
 <div class="contacts-content">
-    <H2 class="how-to-contact" style="color:antiquewhite; text-transform: uppercase; font-size: 50px;">
+    <p class="how-to-contact" style="color:antiquewhite; text-transform: uppercase; font-size: 50px;">
         Как с нами связаться
-    </H2>
+    </p>
+    <div class="adresses">
+        <div class="hex-contact">
+            <a href="https://www.instagram.com/bfmt.company/" target="_blank">
+                <img class="sns-icons" src="{% static 'images/inst.png' %}">
+            </a>
+        </div>
+        <div class="hex-contact">
+            <a href="#">
+                <img class="sns-icons" src="{% static 'images/inst2.png' %}">
+            </a>
+            
+        </div>
+        <div class="hex-contact">
+            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
+                <img class="sns-icons" src="{% static 'images/iyoutube.png' %}">
+            </a>
+        </div>
+        <div class="hex-contact">
+            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
+                <img class="sns-icons" src="{% static 'images/iwhats.png' %}">
+            </a>
+        </div>
+    </div>
     <div class="adresses">
         
             <div class="adress">
@@ -18,25 +41,42 @@
             
         
         <div class="adress">
-            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=139553179030">
+            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=139553179030" target="_blank">
                 <img src="{% static 'images/pin_map.png'%}" style="width: 80px; height: 80px;">
             </a>
-            <p>ШЫМКЕНТ</p>
+            <h2>ШЫМКЕНТ</h2>
             <p>1-ый переулок Байтурсынова</p>
             <p>7/7 (Утеген Батыра 27)</p> 
         </div>
         <div class="adress">
-            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=74541258455">
+            <a href="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=74541258455" target="_blank">
                 <img src="{% static 'images/pin_map.png'%}" style="width: 80px; height: 80px;">
             </a>
-            <p>АЛМАТЫ</p>
+            <h2>АЛМАТЫ</h2>
             <p>ул. Ауэзова</p>
             <p>145В, 211каб.</p>
         </div>
     </div>
+
     <div class="map-yandex" style="width: 100%;">
-        <iframe src="https://api-maps.yandex.ru/frame/v1//?z=12&ol=biz&oid=139553179030" frameborder="0" width="100%" height="400px"></iframe>
+        <iframe src="https://api-maps.yandex.ru/frame/v1//?z=12&ol=biz&oid=139553179030" frameborder="0" width="100%" height="400px" scrolling="no"></iframe>
     </div>
+    
+    <div class="request-form">
+        <form class="send-question"
+        method="post"
+        >
+            {% csrf_token %}
+            <label for="form-name">Имя</label><input type="text" name="name" id="form-name"></p>
+            <label for="form-email">E-main</label><input type="email" name="e-mail" id="form-email">
+            <label for="form-phone">Номер</label><input type="tel" name="phone" id="form-phone">
+            <label for="form-question">Вопрос</label><textarea  name="question" id="form-question"></textarea>
+            <button type="submit">Отправить</button>
+            
+            
+        </form>
+    </div>
+    
 
 </div>
 

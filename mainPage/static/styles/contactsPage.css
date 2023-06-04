@@ -36,3 +36,40 @@
     align-items: center;
     color: #fbd160;
 }
+
+.request-form{
+    display: block;
+    align-items: start;
+    justify-content: left;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+form.send-question{
+    
+    width: 500px;
+    display: grid;
+    font-size: 23px;
+    color: aliceblue;
+    text-align: left;
+
+
+}
+
+
+
+#form-question{
+
+    width: 500px;
+    height: 300px;
+}
+
+
+@media screen and ( max-width: 840px){
+    .request-form{
+        display: flex;
+        margin: 150px auto;
+        margin-left: 40px;
+    }
+
+}
