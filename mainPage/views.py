@@ -11,16 +11,15 @@ import requests
 
 def getHomePage(request):
 
-    
+    header_template = 'header.html'
+    footer_template = 'footer.html'
+    head_template = 'head.html'
     if request.META.get('HTTP_HX_REQUEST'):
         header_template = 'empty_template.html' 
         footer_template = 'empty_template.html' 
-        head_template = 'head.html'
-    else:
-        header_template = 'header.html'
-        footer_template = 'footer.html'
-        head_template = 'head.html'
+        
     
+        
     return render(
         request,
         "home.html",
@@ -32,14 +31,13 @@ def getHomePage(request):
 
 
 def getAboutPage(request):
+
+    header_template = 'header.html'
+    footer_template = 'footer.html'
+    head_template = 'head.html'
     if request.META.get('HTTP_HX_REQUEST'):
         header_template = 'empty_template.html' 
         footer_template = 'empty_template.html' 
-        head_template = 'head.html'
-    else:
-        header_template = 'header.html'
-        footer_template = 'footer.html'
-        head_template = 'head.html'
     
     return render(
         request,
@@ -52,14 +50,13 @@ def getAboutPage(request):
 
 
 def getContactsPage(request):
+    
+    header_template = 'header.html'
+    footer_template = 'footer.html'
+    head_template = 'head.html'
     if request.META.get('HTTP_HX_REQUEST'):
         header_template = 'empty_template.html' 
         footer_template = 'empty_template.html' 
-        head_template = 'head.html'
-    else:
-        header_template = 'header.html'
-        footer_template = 'footer.html'
-        head_template = 'head.html'
     
     return render(
         request,

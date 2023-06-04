@@ -8,22 +8,23 @@ header{
     align-items: center;
     position: fixed;
     top: 0%;
-    backdrop-filter: blur(10px);
-    background-color:#00000067;
+    background-color:#000000;
     z-index: 200;
-    height: 100px;
+    height: 10vh;
 }  
 
 menu {
     
+    display: flex;
+    vertical-align: middle;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 20px;
+    height: 10vh;
     padding: 0 0;
     align-items: center;
     background-color: #000000;
     z-index: 90;
-    border-radius: 10px;
+    
 }
 
 
@@ -35,7 +36,20 @@ menu {
     justify-content: center;
     align-content: center;
     margin: 20px 20px;
+    color: #f8dc8e;
     
+}
+
+.brand .top-ref{
+    display: inline;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 30px;
+    min-width: 250px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .brand:hover {
@@ -57,12 +71,11 @@ menu {
     padding-bottom: 10px;
     margin-inline: 10px;
     
-    
+    font-size: 30px;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid #0e2972;
-    border-radius: 5px;
+    
     transition: 0.2s;
 }
 
@@ -80,48 +93,8 @@ menu {
     padding: 20px 20px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fbd160;
+    color: white;
 
-}
-
-
-.hex-contact{
-    
-    margin: 10px 10px;
-    width: 10vh;
-    height: 10vh;
-
-    display: flex;
-    flex-wrap: unset;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    clip-path: polygon(
-        50% 0%,
-        100% 25%,
-        100% 75%,
-        50% 100%,
-        0% 75%,
-        0% 25%
-    );
-    transition: 0.2s;
-    background-color:rgba(150, 150, 150, 0.233);
-}
-
-.hex-contact:hover{
-    transform: scale(1.1);
-    background-color: #fbd160;
-
-    
-}
-
-
-
-
-.sns-icons{
-    width: 6vh;
-    height: 6vh;
 }
 
 #burger-menu, [for=burger-menu]{
@@ -147,11 +120,11 @@ li {
 
 
 
-@media screen and ( max-width: 840px){
+@media screen and ( max-width: 1000px){
     p#cross-mark{
         display: none;
         position: absolute;
-        font-size: 50px;
+        font-size: 30px;
         width: 50px;
         text-align: center;
         right: 50px;
@@ -161,18 +134,21 @@ li {
     [for=burger-menu]{
         display: block;
         position: absolute;
-        font-size: 50px;
+        font-size: 30px;
         width: 50px;
         text-align: center;
         right: 50px;
         color: #f8dc8e;
         z-index: 202;
+        padding: 0 0;
     }
     menu{
         display: block;
         position: absolute;
         top: 100px;
         width: 100%;
+        height: auto;
+        
         z-index: 80;
         right: 0px;
         animation: hide-menu 0.3s forwards;
@@ -197,6 +173,8 @@ li {
     #burger-menu:checked + label + menu{
         display: block;
         position: absolute;
+
+        background: linear-gradient(to bottom,#01161f 0%,black 100%);
         top: 100px;
         right: 0px;
         z-index: 80;

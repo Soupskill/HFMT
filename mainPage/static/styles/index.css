@@ -21,7 +21,7 @@
 
 body{
     
-    background-image: linear-gradient(to top, black 0%, black 20%, transparent 100%), url(../images/photo_2023-05-30_23-50-27.jpg);
+    background-image: linear-gradient(to top, black 60%, transparent 100%), url(../images/5293464.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,10 +30,12 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    user-select: none;
+    background-color: black;
 }
 
 :root{
-    --hex_ref_width_out: 30vh;
+    --hex_ref_width_out: 200px;
     --min_width_to_mobile: 800px;
 
 }
@@ -47,8 +49,10 @@ body{
 .content{
     
     
-    position: relative;
-    padding: 20% 0;
+    position: absolute;
+    padding: 10% 0;
+    top:20%;
+    width: 100%;
     display: block;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,7 +64,7 @@ body{
 
 @media screen and (max-width: 840px) {
     .content{
-        padding: 60% 0;
+        padding: 20% 0;
     }
     footer{
     

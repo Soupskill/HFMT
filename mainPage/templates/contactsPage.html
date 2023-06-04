@@ -19,12 +19,12 @@
             
         </div>
         <div class="hex-contact">
-            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
+            <a href="https://www.youtube.com/@FitoMir103" target="_blank" >
                 <img class="sns-icons" src="{% static 'images/iyoutube.png' %}">
             </a>
         </div>
         <div class="hex-contact">
-            <a href="https://www.youtube.com/@FitoMir103" target="_blank">
+            <a href="https://www.youtube.com/@FitoMir103" target="_blank" style="filter: invert(1);">
                 <img class="sns-icons" src="{% static 'images/iwhats.png' %}">
             </a>
         </div>
@@ -63,15 +63,16 @@
     </div>
     
     <div class="request-form">
+        <h3>Хотите задать вопрос?</h3>
+        <p>Заполните форму</p>
         <form class="send-question"
         method="post"
         >
             {% csrf_token %}
-            <label for="form-name">Имя</label><input type="text" name="name" id="form-name"></p>
+            <label for="form-name">Имя</label><input type="text" name="name" id="form-name">
             <label for="form-email">E-main</label><input type="email" name="e-mail" id="form-email">
-            <label for="form-phone">Номер</label><input type="tel" name="phone" id="form-phone">
             <label for="form-question">Вопрос</label><textarea  name="question" id="form-question"></textarea>
-            <button type="submit">Отправить</button>
+            <button id="submit-reply" type="submit">Отправить</button>
             
             
         </form>
